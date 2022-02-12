@@ -1,0 +1,39 @@
+Primeiros comandos Git:
+1- Iniciar o Git
+2- Iniciar o versionamento
+3- Criar um commit
+
+1- Iniciar o Git:
+-git init
+-git add
+-git commit
+
+Primeiro repositório:
+Criar uma página chamada 'workspace', direto no repositório /c
+mkdir 'nome da pasta'/
+git init: iniciar um repositório dentro da pasta chamado '.git'
+
+flex:
+ls -a:
+mostra arquivos ocultos, após esta ação, digite o comando ls
+
+Adicionar usuário ao git:
+git config --global user.email "email"
+git config --global user.name "name"
+
+Adicionar um arquivo
+Markdown: formato de escrever texto, usado comunmente no HTML.
+Criar arquivo com extensão markdown. Ex.: arquivo.md
+Utilizando hashtag(#) para definir tipos de textos e temas.
+
+Ex.: #texto1, ##texto2, **negrito**,  _itálico_
+Os dois pontos (:) pode ser usado para adicionar emote.
+- + space= listagem utilizando bolinhas.
+
+link: markdownguide
+Caso seja necessário
+
+No arquivo aberto o Git Bash-
+git add *
+git commit -m "string/comentário, carregam textos"
+Aparece caracteres que identica o commit.

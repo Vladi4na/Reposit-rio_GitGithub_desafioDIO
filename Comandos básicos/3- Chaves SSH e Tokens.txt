@@ -1,0 +1,32 @@
+Chaves SSH e Tokens
+
+Chave SSH:
+commands:
+ssh-keygen -t ed25519 -C 'email':
+Gera a chave SSH, acrescentando a senha depois.
+A chave pública e privada(ex.: id_ed25519 id_ed25519.pub)
+
+cd /c/Users/'usuario'/.ssh/:
+entra no diretório.
+dando ls, que lista o conteúdo dentro, aparecerá a chave pública e privada.
+
+cat id_ed25519.pub:
+chave pública para expor no github.
+
+adiciona na criação de 'nova chave ssh'
+inicializar o ssh:
+
+eval $(ssh-agent -s):
+Dá o número de processo, de inicialização.
+
+ssh-add id_ed25519: 
+identidade adicionada.
+
+git clone 'clone de ssh' + yes=
+clona o git e a chave avisa quando foi utilizada, clonada.
+
+
+Token de acesso pessoal:
+developer sttings de Github.
+gerar token, marcar opção HEPO, nomear token e assim é gerado e deve ser salvo em um lugar seguro.
+

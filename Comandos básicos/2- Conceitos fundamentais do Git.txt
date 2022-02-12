@@ -1,0 +1,57 @@
+Git por baixo dos panos
+
+1- SHA1
+2- Objetos fundamentais
+3- Sistema distribuído
+4- Segurança
+
+1- SHA1:
+Algoritmo de Hashseguro, é um conjunto de funções hash criptográficas projetadas pela NSA(Agência de Segurança Nacional dos EUA).
+A encriptação gera conjunto de caractres identificador de 40 dígitos.
+Forma curta de representar um arquivo, cada alteração a chave é mudada.
+
+Commands:
+'abrir com git bash' na pasta.
+
+openssl sha1 arquivo.txt:
+Cria uma chave para o arquivo.
+
+2- Objetos fundamentais:
+-BLOBS
+-TREES
+-COMMITS
+
+Blobs:
+Commands-
+echo 'conteudo' | git hash-object --stdin: 
+Responde o SHA1 do arquivo;
+echo -e 'conteudo' | opennsl sha1:
+Responde já com outro tipo de chave;
+
+Os objetos ficam guardados dentro do objeto Blob.
+Blob \0
+
+echo -e 'blob \0conteudo' | opennsl sha1:
+Apresenta a mesma chave que o primeiro comando.
+
+Tree:
+\0
+Armazenam blobs, contém metadados.
+tree->blobs->sha1->arquivos
+Apontam a direção de um arquivo, podendo apontar a direção de outra Tree, tendo cada um sha1.
+Caso algo da árvore seja mudado, a estrutura muda junto, assim com o sha1.
+
+Commit:
+Junta tudo.
+Commit aponta para a tree, parente, autor, mensagem, timestrap.
+Possuem sha1, logo, se mudar o blob, muda o sha1 de todos (tree, commit).
+
+4- Segurança:
+Garante de que o commit, não seja invadido, o código sha1 muda a estrutura a cada alteração.
+
+commit->tree->blobs->sha1->arquivo/diretório.
+
+3- Sistema distribuído:
+A versão é confiável, pois a estrutura do git salva as versões para todos que tenham acessado, podendo mostrar o que foi alterado, o antes e depois.
+
+ 

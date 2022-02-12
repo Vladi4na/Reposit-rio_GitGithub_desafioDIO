@@ -1,0 +1,48 @@
+Conteúdo: 
+1- Mudar de pastas
+2- Listar as pastas
+3- Criar pastas/arquivos
+4- Deletar pastas/arquivos
+ 
+Windows commands:
+-cd
+-dir
+-mkdir
+-del/rmdir
+
+Unix commands:
+-cd
+-ls
+-mkdir
+-rm-rf
+
+Comandos e suas funções:
+2- Dir/ls: 
+Apresenta uma lista de diretórios disponíveis na pasta;
+
+1- Cd /:
+Leva para a base do diretório;
+
+Cd ..: 
+Retrocede um diretório;
+
+Clear/cls: 
+Limpa o repositório;
+
+'Tab':
+Completa o nome de um diretório caso ele seja grande.
+
+3- Mkdir + 'nome da pasta':
+Cria uma pasta no diretório desejado;
+
+Echo:
+Printa uma frase ou palavra que você escrever;
+
+Echo 'palavra' > 'palavra'.txt + enter:
+Cria uma pasta com a frase/palavra digitada;
+
+4- Del:
+Deleta arquivos e todo seu conteúdo, caso deseje;
+
+Rmkdir: 
+Remover repositório com todos os arquivos dentro;
